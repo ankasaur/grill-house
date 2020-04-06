@@ -190,13 +190,16 @@ header {
 }
 
 #slider .controls {
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
     position: relative;
     top: 500px;
     text-align: center;
 }
 
 #slider .controls span {
-    display: inline-block;
+    float: left;
     height: 43px;
     margin: 0 10px;
     cursor: pointer;
