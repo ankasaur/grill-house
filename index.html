@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Grill House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-containter">
+            <img class="logo" src="img/logo.png">
+            <nav class="nav-header">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#promotions">Promotions</a></li>
+                    <li><a href="#method">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="slider">
+            <img class="slide-left" src="img/pic-1.png">
+            <img class="slide-right" src="img/pic-2.png">
+            <div class="slide active" data-num="0">
+                <table class="slide-content yellow">
+                    <tr>
+                        <th>Opening Party</th>
+                    </tr>
+                    <tr>
+                        <td>06/10/2020 - 7 P.M.</td>
+                    </tr>
+                </table>
+                <span class="slide-text">FOOD - MUSIC - FRIENDS - FUN</span>
+            </div>
+            <div class="slide" data-num="1">
+                <table class="slide-content yellow">
+                    <tr>
+                        <th>Mid Party</th>
+                    </tr>
+                    <tr>
+                        <td>07/20/2020 - 8 P.M.</td>
+                    </tr>
+                </table>
+                <span class="slide-text">FUN - FUN - FUN - FUN</span>
+            </div>
+            <div class="slide" data-num="2">
+                <table class="slide-content yellow">
+                    <tr>
+                        <th>Closing Party</th>
+                    </tr>
+                    <tr>
+                        <td>08/30/2020 - 9 P.M.</td>
+                    </tr>
+                </table>
+                <span class="slide-text">FOOD - FOOD - FOOD - FOOD</span>
+            </div>
+            <div class="controls">
+                <span class="prev"></span>
+                <span class="dot active" data-num="0"></span>
+                <span class="dot" data-num="1"></span>
+                <span class="dot" data-num="2"></span>
+                <span class="next"></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="fixed">
+            <img src="img/up-arrow.png"><br>
+            <span>TOP</span>
+        </div>
+        <div id="menu">
+            <h2>Menu</h2>
+            <div class="menu-content">
+                <div class="menu-left">
+                    <img src="img/menu-1.png">
+                    <table class="yellow">
+                        <tr>
+                            <th colspan="2">Chicken</th>
+                        </tr>
+                        <tr>
+                            <td>Chicken with Salad</td>
+                            <td>6,00</td>
+                        </tr>
+                        <tr>
+                            <td>The Gold Chicken</td>
+                            <td>11,00</td>
+                        </tr>
+                        <tr>
+                            <td>Chicken with Sauce</td>
+                            <td>8,00</td>
+                        </tr>
+                    </table>
+                    <table class="yellow">
+                        <tr>
+                            <th colspan="2">Sides</th>
+                        </tr>
+                        <tr>
+                            <td>French Fries</td>
+                            <td>6,00</td>
+                        </tr>
+                        <tr>
+                            <td>Mushrooms</td>
+                            <td>11,00</td>
+                        </tr>
+                        <tr>
+                            <td>Roasted Broccoli</td>
+                            <td>8,00</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-middle">
+                    <img class="menu-middle-img" src="img/menu-2.png">
+                    <table class="yellow">
+                        <tr>
+                            <th colspan="2">Beef</th>
+                        </tr>
+                        <tr>
+                            <td>Prime Steak</td>
+                            <td>6,00</td>
+                        </tr>
+                        <tr>
+                            <td>Steak Beef (700 gr.)</td>
+                            <td>11,00</td>
+                        </tr>
+                        <tr>
+                            <td>Entrecôte</td>
+                            <td>8,00</td>
+                        </tr>
+                    </table>
+                    <table class="yellow">
+                        <tr>
+                            <th colspan="2">Drinks</th>
+                        </tr>
+                        <tr>
+                            <td>Lemonade</td>
+                            <td>2,50</td>
+                        </tr>
+                        <tr>
+                            <td>Beer</td>
+                            <td>4,50</td>
+                        </tr>
+                        <tr>
+                            <td>Wine</td>
+                            <td>8,50</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-right">
+                    <img src="img/menu-3.png">
+                    <table class="yellow">
+                        <tr>
+                            <th colspan="2">Pork</th>
+                        </tr>
+                        <tr>
+                            <td>Pork Cheeks</td>
+                            <td>6,00</td>
+                        </tr>
+                        <tr>
+                            <td>Iberian Special Cut</td>
+                            <td>11,00</td>
+                        </tr>
+                        <tr>
+                            <td>Pork Chop</td>
+                            <td>8,00</td>
+                        </tr>
+                    </table>
+                    <table class="yellow">
+                        <tr>
+                            <th colspan="2">Desserts</th>
+                        </tr>
+                        <tr>
+                            <td>Cheesecake</td>
+                            <td>6,00</td>
+                        </tr>
+                        <tr>
+                            <td>Tiramisu</td>
+                            <td>5,00</td>
+                        </tr>
+                        <tr>
+                            <td>Chocolate Mousse</td>
+                            <td>8,00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="promotions">
+            <img src="img/pic-3.png">
+            <div class="promo">
+                <p>Get a <br><strong>25% discount</strong><br> on your next dinner</p>
+                <button href="#">Read More</button>
+                <br>
+                <img class="logo" src="img/logo.png">
+                <h4 class="title">The Meat Experience</h4>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="specials">
+            <table class="yellow">
+                <tr>
+                    <th>Special of the Month</th>
+                </tr>
+                <tr>
+                    <td>Tomahawk Steak</td>
+                </tr>
+            </table>
+            <p>A special cut of beef ribeye with a bone resembling a single-handed axe and tender meat, that will melt
+                both your heart and in your mouth!</p>
+            <img class="img-1" src="img/pic-1.png">
+            <img class="img-2" src="img/pic-4.png">
+            <img class="img-3" src="img/pic-5.png">
+        </div>
+        <div class="clear specials"></div>
+        <div id="method">
+            <img src="img/pic-6.png">
+            <table class="yellow">
+                <tr>
+                    <th>Our Method</th>
+                </tr>
+                <tr>
+                    <td>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="clear"></div>
+        <div id="events">
+            <table class="yellow">
+                <tr>
+                    <th>Live Music</th>
+                </tr>
+                <tr>
+                    <td><strong>Jazz Night</strong><br>Every Friday</td>
+                </tr>
+            </table>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <img src="img/pic-7.png">
+        </div>
+        <div class="clear"></div>
+    </main>
+    <footer>
+        <img class="logo" src="img/logo.png">
+        <h4 class="title">-The Meat Experience-</h4>
+        <div class="container">
+            <table class="yellow">
+                <tr>
+                    <th colspan="2">Open Hours</th>
+                </tr>
+                <tr>
+                    <td>Mon-Thu:<br>Fri-Sun:</td>
+                    <td>12AM - 11PM<br>10AM - 12AM</td>
+                </tr>
+            </table>
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#method">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social">
+            <ul class="social">
+                <li class="instagram"><a href="#instagram"></a></li>
+                <li class="facebook"><a href="#facebook"></a></li>
+                <li class="twitter"><a href="#twitter"></a></li>
+                <li class="youtube"><a href="#youtube"></a></li>
+            </ul>
+        </div>
+        <span class="license">Source design by <a href="http://www.freepik.com">Freepik</a></span>
+    </footer>
+</body>
+
+</html>
